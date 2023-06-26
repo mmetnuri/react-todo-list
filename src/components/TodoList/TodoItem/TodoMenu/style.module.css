@@ -1,0 +1,51 @@
+.menu {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 150px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  background-color: #fff;
+  box-shadow: var(--shadow2);
+}
+
+.btn{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid;
+    border-radius: 50%;
+    font-size: 24px;
+    cursor: pointer;
+    transition: all .2 ease-in-out;
+}
+.deleteBtn{
+    background-color: #fff;
+    border-color: red;
+    color: red;
+}
+
+.deleteBtn:hover{
+    background-color: red;
+    border: none;
+    color: white;
+
+}
+
+.completeBtn{
+    background-color: #fff;
+    border-color: var(--green-color);
+    color: var(--green-color);
+}
+
+.completeBtn:hover,
+.completeBtn.completed{
+    background-color: var(--green-color);
+    border: none;
+    color: white;
+}
